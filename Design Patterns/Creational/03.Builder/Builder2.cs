@@ -1,31 +1,31 @@
 namespace DesignPatterns.Creational.Builder;
 
-public class ToyotaCarBuilder
+public class HondaCarBuilder
 {
   private Car _car = new Car()
   {
-    Make = "Toyota"
+    Make = "Honda"
   };
 
-  public ToyotaCarBuilder SetModel(string model)
+  public HondaCarBuilder SetModel(string model)
   {
     _car.Model = model;
     return this;
   }
 
-  public ToyotaCarBuilder SetYear(int year)
+  public HondaCarBuilder SetYear(int year)
   {
     _car.Year = year;
     return this;
   }
 
-  public ToyotaCarBuilder SetColor(string color)
+  public HondaCarBuilder SetColor(string color)
   {
     _car.Color = color;
     return this;
   }
 
-  public ToyotaCarBuilder SetEngineType(string engineType)
+  public HondaCarBuilder SetEngineType(string engineType)
   {
     _car.EngineType = engineType;
     return this;
